@@ -5,10 +5,10 @@ export default function Card({prop, catg, isPopular}){
 
     console.log(catg, prop);
     
-    return(<div className={`border-2 border-black hover:border-blue-600 rounded-2xl cursor-pointer 
-                            md:w-60 
+    return(<div className={`hover:border-blue-600 bg-white mb-10 rounded-2xl shadow-lg cursor-pointer 
+                            md:w-75  md:mr-5
                             ${isPopular === true ? "md:flex md:w-80 md:h-40":""}
-                            ${catg === "activite" ? "h-[200px] pb-3 bg-red-300":"h-[300px]"}
+                            ${catg === "activite" ? "h-[200px] pb-3":"h-[300px]"}
                             
                             `}
             >
@@ -17,7 +17,7 @@ export default function Card({prop, catg, isPopular}){
                         ${catg === "activite" ? "h-2/3":"h-1/2"}
                        `}
         >
-         <Image className={`h-full object-cover border rounded-t-xl 
+         <Image className={`h-full w-full object-cover border rounded-t-xl 
                             ${isPopular === true ? "md:rounded-none md:rounded-l-xl":""}
                           `} 
                 src={prop.img} alt="photo" 
