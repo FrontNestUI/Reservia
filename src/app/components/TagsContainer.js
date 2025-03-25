@@ -23,13 +23,18 @@ export default function TagsContainer(){
         }
     ]
 
-    return(<div className="justify-between w-full pb-15 space-y-5 mt-10">
-        <h3 className="text-xl">Filters</h3>
-        <div className="flex flex-wrap ">
-            {tags.map((tag , index) => {
-                return <TagCard key={index} prop={tag}/>
-            })}
+    return(<div className="justify-between w-full pb-15 space-y-5 mt-10 ">
+        <div className="md:flex space-x-20">
+            <h3 className="text-xl">Filters</h3>
+            <div className="flex flex-wrap md:space-x-10">
+                {tags.map((tag , index) => {
+                    return <TagCard key={index} prop={tag}/>
+                })}
+            </div>
         </div>
-        <span className="w-full h-11 min-h[20px]"><FontAwesomeIcon className="text-blue-600 text-lg border-1 border-gray-500 py-1 px-2 rounded-xl" icon={faInfo}/>Plus de 500 logements sont disponibles dans cette ville</span>
+        <div className="flex items-center">
+            <FontAwesomeIcon className="text-blue-600 text-lg border-1 border-gray-500 py-1 px-2 mr-3  rounded-2xl" icon={faInfo}/>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
     </div>)
 }

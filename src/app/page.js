@@ -12,18 +12,22 @@ export default function Home() {
 
  
   return (
-    <main>
+    <main className='md:px-15 py-2'>
       <div>
         <MainNavBar/>
         <NavCatg/>
       </div>
 
-      <div className="px-10 flex-1">
+      <div className="px-10">
         <Hero/>
         <SearchBar/>
         <TagsContainer/>
-        <Container title='Les Plus Populaires' category='hebergement'  id={'hebergements'} isPopular={true}/>
-        <Container title='Hébergements a Marseille' category='hebergement' id={'hebergements'} isPopular={false}/>
+
+        <div className='md:flex md:flex-row md:justify-between'>
+          <Container title='Hébergements a Marseille' category='hebergement' id={'hebergements'} isPopular={false}/>
+          <Container title='Les Plus Populaires' category='hebergement'  id={'hebergements'} isPopular={true}/>
+        </div>
+     
         <Container title='Activités a Marseille' category='activite' id={'activites'} isPopular={false}/>
       </div>
 
