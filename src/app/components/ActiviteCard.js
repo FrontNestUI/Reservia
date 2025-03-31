@@ -12,7 +12,7 @@ export default function ActiviteCard({prop, style, size}){
                     quality={75} 
             />
         </div>
-        <h3 className="text-lg font-semibold">{prop.title}</h3>  
+        <h3 className=" p-4 flex-1 text-lg font-semibold">{prop.title}</h3> 
        
     </div>)
 }
