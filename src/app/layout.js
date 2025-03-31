@@ -7,7 +7,7 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false; /* eslint-disable import/first */
 
 export const metadata = {
-  title: "Rersevia",
+  title: "Rersevia | Locations de vacances, cabanes, maison, manoir",
   description: "Find and book unique stays, vacation rentals, and experiences worldwide. Explore cozy homes, beachfront villas, and city apartments with ease. Start your next adventure today!",
 };
 

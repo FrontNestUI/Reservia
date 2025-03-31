@@ -1,7 +1,6 @@
 'use client'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { faStar as faRegularStar } from "@fortawesome/free-regular-svg-icons";
 
 
 export default function Rating({prop}){

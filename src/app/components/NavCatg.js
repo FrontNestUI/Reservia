@@ -7,7 +7,7 @@ export default function NavCatg(){
     const categories = [{title:'Hébergements', id:'hebergements'}, {title:'Activités', id:'activites'}]
  
     return(<div className="flex justify-between cursor-pointer mb-10">
-                <div className="flex">
+                <div className="flex text-center w-full">
                 {categories.map((category, index) => {
                     return <a 
                             key={index} 

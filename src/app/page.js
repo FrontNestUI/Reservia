@@ -7,6 +7,7 @@ import TagsContainer from "./components/TagsContainer";
 import SearchBar from "./components/SearchBar";
 import Footer from "./components/Footer";
 import DesktopNavBar from './components/DesktopNavBar';
+import ActiviteContainer from './components/ActiviteContainer';
 //const Container = lazy(() => import('./components/Container'))
 
 export default function Home() {
@@ -32,7 +33,7 @@ export default function Home() {
             <Container title='Hébergements a Marseille' category='hebergement' id={'hebergements'} isPopular={false}/>
           </div>
       
-          <Container title='Activités a Marseille' category='activite' id={'activites'} isPopular={false}/>
+          <ActiviteContainer/>
         </div>
       </section>
      

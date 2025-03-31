@@ -1,4 +1,4 @@
-const listings = [
+const hebergementListings = [
     {
         category: "hebergement",
         title: "Hôtel Le Soleil du Matin",
@@ -79,7 +79,10 @@ const listings = [
         rating: 5,
         img: "/images/hebergements/hotel_chez_amina.webp",
         most_Popular: false
-    },
+    }   
+]
+
+const activiteListings = [
     {
         category: "activite",
         title: "Vieux Port",     
@@ -135,7 +138,6 @@ const listings = [
         most_Popular: false
     }
 ]
-
 const tags = [
     {
         icon: "fa-solid fa-money-bill-wave",
@@ -179,4 +181,4 @@ const footer =[
         ]
     },
 ]
-export {listings, tags, footer}
+export {hebergementListings,activiteListings, tags, footer}
