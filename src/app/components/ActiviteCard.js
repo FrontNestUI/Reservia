@@ -12,11 +12,7 @@ export default function ActiviteCard({prop, style, size}){
                     quality={75} 
             />
         </div>
-        <div className="p-4 flex-1">
-            <h3 className="text-lg font-semibold">{prop.title}</h3>  
-            <p>Nuit à partir de {prop.price} {prop.currency}</p>
-            <Rating  prop={prop.rating}/>
-        </div>
+        <h3 className="text-lg font-semibold">{prop.title}</h3>  
        
     </div>)
 }
